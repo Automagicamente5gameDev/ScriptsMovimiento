@@ -31,9 +31,9 @@ public class MovimientoJugador : MonoBehaviour
         animationPlayer.SetBool("isGrounded", isGrounded);
     }
 
-    // Detecta si el jugador est� tocando el suelo
+    // Detecta si el jugador esta tocando el suelo
     void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.collider.name == "Plataforma") // Aseg�rate de que el suelo tenga el tag "Ground"
+        if (collision.collider.name == "Plataforma") // Asegarate de que el suelo tenga el tag "Ground"
         {
             isGrounded = true;
             bajoAtaque = false;
